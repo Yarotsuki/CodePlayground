@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <?xml version="1.0" encoding="utf-8"?>
+    <script src="https://kit.fontawesome.com/4c1753a7d9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <link rel="stylesheet" href="../dist/css/code.css">
+    <script src="../js/script.js"></script>
+    <script src="../js/iframe.js"></script>
+    <title>CodePlayground</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="scanner">
+          <span>Chargement...
+          </span>
+        </div>
+      </div>
+  
+        <nav class="navbar">
+            <a href="#" class="logo" >CodePlayground</a>
+            <div class="nav-links mobile-menu">
+   
+                  <button id="toggle-moon-sun">
+                    <svg id="moon" class="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              
+               
+                  <svg id="sun" class="sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ff0000" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                      
+                  </button>
+ 
+            </div>
+            <div class="menu-hamburger-container">
+              <img src="../dist/img/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+              <img src="../dist/img/menu-btn copie.png" alt="menu-hamburger" class="menu-hamburger-dark">
+          </div>
+          
+        </nav>
+    
+
+    <main id="main">
+      <section>
+        <div class="code">
+          <label class="intit_categ_html"><i class="fa-brands fa-html5"></i><p >HTML</p></label>
+          <textarea class="text-area-html" oninput="rafraichir ()" placeholder="Ecrivez du code HTML..." id="code-HTML" cols="25" rows="10"></textarea>
+        
+  
+          <label class="intit_categ_css"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></label>
+          <textarea class="text-area-css"  oninput="rafraichir ()" placeholder="Ecrivez du code CSS..." id="code-CSS" cols="30" rows="10"></textarea>
+        
+
+          <label class="intit_categ_js"><i class="fa-brands fa-js"></i><p>JS</p></label>
+          <textarea class="text-area-js" oninput="rafraichir ()" placeholder="Ecrivez du code JS..." id="code-JS" cols="30" rows="10"></textarea>
+      </div>
+      <iframe id="res" class="light-mode-theme-iframe"></iframe>
+      </section>
+    </main>
+
+    
+    
+
+    
+    
+</body>
+</html>

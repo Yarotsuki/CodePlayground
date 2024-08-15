@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+body{
+    font-family:sans-serif;
+    background-color: white;
+}
+
+.logo{
+    color: black;
+}
+
+.navbar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: transparent;
+    position: sticky;
+}
+
+
+.navbar-a{
+    padding: 10px;
+    text-decoration: none;
+    color: black; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.navbar .logo  {
+    font-size: 2em;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links button
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar .nav-links ul li{ 
+  
+    margin: 25px;
+}
+
+.navbar .nav-links ul li.active a {
+    color: chocolate;
+    font-weight: 600;
+}
+
+
+.menu-hamburger-container {
+    display: none;
+}
+
+.menu-hamburger,
+.menu-hamburger-dark {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+
+
+#text1{
+    margin-bottom: 40px;
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.dark-mode-theme{
+    background-color: #343a40;
+    color: #ffff;
+}
+
+.dark-mode-theme-logo{
+    color: #ffffff;
+}
+
+.moon, .sun {
+    display: block;
+    pointer-events: auto;
+}
+
+#toggle-moon-sun{
+    border: none;
+    background: transparent;
+}
+
+svg{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    fill: white;
+
+
+}
+
+
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.472);
+    backdrop-filter: blur(8px);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scanner span {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+  }
+  
+  .scanner span::before {
+    content: "Chargement...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid black;
+    overflow: hidden;
+    color: black;
+    animation: load91371 2s linear infinite;
+    
+  }
+
+.preloader-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.preloader-dark span::before {
+    color: white; 
+    border-right: 4px solid white;
+}
+  
+  @keyframes load91371 {
+    0%, 10%, 100% {
+      width: 0;
+    }
+  
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+      border-right-color: transparent;
+    }
+  
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+      border-right-color: black;
+    }
+  
+    60%, 80% {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .menu-hamburger-container {
+        display: block;
+    }
+
+    .menu-hamburger,
+    .menu-hamburger-dark {
+        display: block;
+    }
+
+    .nav-links {
+       
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        margin-left: -1000% ;
+        transition: all 400ms ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(7px);
+    }
+    .nav-links.dark-mode {
+        background-color: rgb(163, 47, 47); /* Couleur de fond en mode sombre */
+    }
+
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+        color: white; 
+    }
+
+    .btn-light {
+        display: block;
+        
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+    
+    .menu-hamburger-dark {
+        display: none;
+    }
+  
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+    
+
+    
+    
